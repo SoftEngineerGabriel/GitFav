@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --input-color: #06181C;
+    --button-color: #065E7C;
+    --thead-color: #092D38;
+}
+
+body {
+    font-size: 1.6rem;
+    background: #000;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+#app {
+    max-width: 767px;
+    justify-content: space-between;
+    margin: 0 auto;
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 19rem;
+    margin: 8rem 0 8rem 0;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.favorites-input input {
+    width: 30rem;
+    background: var(--input-color);
+    border-radius: .4rem;
+    padding: .8rem;
+    color: #fff;
+    border: none;
+}
+
+.favorites-input button {
+    background-color: var(--button-color);
+    color: #fff;
+    border-radius: .4rem;
+    border: none;
+    padding: .8rem;
+    cursor: pointer;
+}
+
+
+table {
+    width: 767px;
+    text-align: left;
+    border-collapse: collapse;
+    font-size: 1.4rem;
+}
+
+table th:first-child{
+    border-top-left-radius: 1.4rem;
+}
+
+table th:last-child{
+    border-top-right-radius: 1.4rem;
+}
+
+td img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+thead th {
+    background-color: var(--thead-color);
+    padding: 1.8rem;
+}
+
+tbody td {
+    padding: 1.8rem;
+}
+
+td.user {
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+}
+
+td.user a {
+    text-decoration: none;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+td.user a p {
+    font-weight: 700;
+}
+
+button.remove {
+    background: none;
+    border: none;
+    color: red;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+table tr:nth-child(even){
+    background: #06181C;
+}
+
+table tr:last-child{
+    border-bottom-left-radius: 1.4rem;
+}
